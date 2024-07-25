@@ -28,7 +28,7 @@
             },
             "attrs": {
               "text": {
-                "text": "Browser"
+                "text": "Browser / APP"
               },
               "body": {
                 "stroke": "#333333",
@@ -38,11 +38,11 @@
             },
             "visible": true,
             "shape": "actor",
-            "id": "46077324-f09b-4e38-ac32-0992c1227531",
             "zIndex": 1,
+            "id": "46077324-f09b-4e38-ac32-0992c1227531",
             "data": {
               "type": "tm.Actor",
-              "name": "Browser",
+              "name": "Browser / APP",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -72,8 +72,8 @@
             },
             "visible": true,
             "shape": "process",
-            "id": "518d1c35-3a33-4f2b-88cd-a1de148f2fe3",
             "zIndex": 2,
+            "id": "518d1c35-3a33-4f2b-88cd-a1de148f2fe3",
             "data": {
               "type": "tm.Process",
               "name": "Web \nApplication",
@@ -112,8 +112,8 @@
             },
             "visible": true,
             "shape": "store",
-            "id": "94d1edd2-45c2-42b5-bc94-abf95f5cc614",
             "zIndex": 3,
+            "id": "94d1edd2-45c2-42b5-bc94-abf95f5cc614",
             "data": {
               "type": "tm.Store",
               "name": "Database",
@@ -206,80 +206,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Request (HTTP)",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "e57d8193-680c-43ea-b38f-8d581bd97032",
-                  "title": "Nova ameaça STRIDE",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": "90"
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "id": "93032d6c-f63c-497a-a16b-6dded909386e",
-            "source": {
-              "x": 220,
-              "y": 140
-            },
-            "target": {
-              "x": 310,
-              "y": 220
-            },
-            "vertices": [
-              {
-                "x": 250,
-                "y": 140
-              },
-              {
-                "x": 280,
-                "y": 160
-              }
-            ],
-            "labels": [
-              "Web Request (HTTP)"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Web Response (HTTP)",
               "description": "",
               "outOfScope": false,
@@ -311,6 +237,9 @@
               }
             },
             "id": "d9aee2b5-d67e-4307-a3da-e8245024085e",
+            "labels": [
+              "Web Response (HTTP)"
+            ],
             "source": {
               "cell": "518d1c35-3a33-4f2b-88cd-a1de148f2fe3"
             },
@@ -322,9 +251,6 @@
                 "x": 156.25,
                 "y": 220
               }
-            ],
-            "labels": [
-              "Web Response (HTTP)"
             ]
           },
           {
@@ -359,6 +285,9 @@
               "threats": []
             },
             "id": "828d7e49-15e9-40b7-bd76-d811a14e1c9e",
+            "labels": [
+              "Read web app config"
+            ],
             "source": {
               "cell": "3f01f47f-b9d5-4058-9845-8cc5787dd077"
             },
@@ -370,77 +299,6 @@
                 "x": 220,
                 "y": 340
               }
-            ],
-            "labels": [
-              "Read web app config"
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Web App Query\n Results",
-              "description": "",
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "10e05f1c-3eee-4836-9b9d-3e7bbe67c22c",
-                  "title": "SQL Injection",
-                  "status": "Open",
-                  "severity": "Medium",
-                  "type": "Information disclosure",
-                  "description": "",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 3,
-                  "score": ""
-                }
-              ],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 1,
-                "denialOfService": 0
-              }
-            },
-            "id": "48a2eefd-acd9-4913-b230-4e8991192c00",
-            "source": {
-              "cell": "518d1c35-3a33-4f2b-88cd-a1de148f2fe3"
-            },
-            "target": {
-              "cell": "94d1edd2-45c2-42b5-bc94-abf95f5cc614"
-            },
-            "vertices": [
-              {
-                "x": 380,
-                "y": 350
-              }
-            ],
-            "labels": [
-              "Web App Query\n Results"
             ]
           },
           {
@@ -495,6 +353,9 @@
               }
             },
             "id": "2cafe4be-9ce5-4854-9f29-877e7c8c8ba7",
+            "labels": [
+              "Queries"
+            ],
             "source": {
               "cell": "94d1edd2-45c2-42b5-bc94-abf95f5cc614"
             },
@@ -506,9 +367,161 @@
                 "x": 300,
                 "y": 340
               }
-            ],
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web App Query\n Results",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "10e05f1c-3eee-4836-9b9d-3e7bbe67c22c",
+                  "title": "SQL Injection",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "48a2eefd-acd9-4913-b230-4e8991192c00",
             "labels": [
-              "Queries"
+              "Web App Query\n Results"
+            ],
+            "source": {
+              "cell": "518d1c35-3a33-4f2b-88cd-a1de148f2fe3"
+            },
+            "target": {
+              "cell": "94d1edd2-45c2-42b5-bc94-abf95f5cc614"
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Web Request (HTTP)",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "e57d8193-680c-43ea-b38f-8d581bd97032",
+                  "title": "Nova ameaça STRIDE",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Information disclosure",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": "90"
+                },
+                {
+                  "id": "668eae8b-8d0b-4f02-9c02-050175200f31",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "id": "93032d6c-f63c-497a-a16b-6dded909386e",
+            "labels": [
+              "Web Request (HTTP)"
+            ],
+            "source": {
+              "x": 220,
+              "y": 140
+            },
+            "target": {
+              "x": 310,
+              "y": 220
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 140
+              },
+              {
+                "x": 280,
+                "y": 160
+              }
             ]
           },
           {
@@ -535,6 +548,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "id": "3f01f47f-b9d5-4058-9845-8cc5787dd077",
             "data": {
               "type": "tm.Store",
@@ -549,14 +563,13 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 11
+            }
           }
         ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 4
+    "threatTop": 5
   }
 }
