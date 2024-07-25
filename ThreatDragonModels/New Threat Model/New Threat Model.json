@@ -294,9 +294,144 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "48a2eefd-acd9-4913-b230-4e8991192c00",
+            "source": {
+              "cell": "518d1c35-3a33-4f2b-88cd-a1de148f2fe3"
+            },
+            "target": {
+              "cell": "94d1edd2-45c2-42b5-bc94-abf95f5cc614"
+            },
+            "vertices": [
+              {
+                "x": 380,
+                "y": 350
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "2cafe4be-9ce5-4854-9f29-877e7c8c8ba7",
+            "source": {
+              "cell": "518d1c35-3a33-4f2b-88cd-a1de148f2fe3"
+            },
+            "target": {
+              "cell": "94d1edd2-45c2-42b5-bc94-abf95f5cc614"
+            },
+            "vertices": [
+              {
+                "x": 300,
+                "y": 340
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": "4 3"
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": true,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "id": "828d7e49-15e9-40b7-bd76-d811a14e1c9e",
+            "source": {
+              "cell": "518d1c35-3a33-4f2b-88cd-a1de148f2fe3"
+            },
+            "target": {
+              "cell": "3f01f47f-b9d5-4058-9845-8cc5787dd077"
+            },
+            "vertices": [
+              {
+                "x": 220,
+                "y": 340
+              }
+            ]
+          },
+          {
             "position": {
-              "x": 87.5,
-              "y": 398
+              "x": 60,
+              "y": 360
             },
             "size": {
               "width": 120,
